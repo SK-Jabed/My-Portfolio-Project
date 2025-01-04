@@ -318,7 +318,7 @@ const Skills = () => {
 
         <div className="space-y-16">
           {skillsData.map((category, index) => (
-            <Fade key={index} direction="up" duration={800}>
+            <Fade key={index} direction="up">
               <div>
                 <h3 className="text-3xl font-semibold text-blue-400 mb-8 text-center">
                   {category.category}

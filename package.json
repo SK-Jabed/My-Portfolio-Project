@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@nextui-org/navbar": "^2.2.7",
     "@nextui-org/react": "^2.6.10",
+    "emailjs-com": "^3.2.0",
     "flowbite-react": "^0.10.2",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",

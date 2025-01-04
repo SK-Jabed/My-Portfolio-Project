@@ -286,117 +286,121 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-black to-purple-900 z-50 shadow-lg">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        {/* Left: Logo */}
-        <div className="text-xl font-bold text-white">
-          <a href="#" className="hover:text-gray-300 transition">
-            Ali<span className="text-purple-300">Ercan.</span>
-          </a>
+    <div className="h-[60px]">
+      <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-black to-purple-900 z-50 shadow-lg">
+        <div className="container mx-auto flex items-center justify-between px-6 py-4">
+          {/* Left: Logo */}
+          <div className="text-xl font-bold text-white">
+            <a href="#" className="hover:text-gray-300 transition">
+              Ali<span className="text-purple-300">Ercan.</span>
+            </a>
+          </div>
+
+          {/* Middle: Desktop Nav Links */}
+          <div className="hidden md:flex space-x-6 text-lg">
+            <a
+              href="#"
+              className="text-white hover:text-purple-300 transition duration-300"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="text-white hover:text-purple-300 transition duration-300"
+            >
+              About Me
+            </a>
+            <a
+              href="#skills"
+              className="text-white hover:text-purple-300 transition duration-300"
+            >
+              My Skills
+            </a>
+            <a
+              href="#projects"
+              className="text-white hover:text-purple-300 transition duration-300"
+            >
+              My Projects
+            </a>
+            <a
+              href="#contact"
+              className="text-white hover:text-purple-300 transition duration-300"
+            >
+              Contact Me
+            </a>
+          </div>
+
+          {/* Right: Hire Me Button */}
+          <div className="hidden md:block">
+            <a
+              href="#contact"
+              className="px-6 py-2 bg-purple-600 text-white font-medium rounded-md hover:bg-purple-700 transition"
+            >
+              Hire Me
+            </a>
+          </div>
+
+          {/* Mobile Menu Icon */}
+          <button
+            className="md:hidden text-white focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={
+                  menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                }
+              />
+            </svg>
+          </button>
         </div>
 
-        {/* Middle: Desktop Nav Links */}
-        <div className="hidden md:flex space-x-6 text-lg">
-          <a
-            href="#home"
-            className="text-white hover:text-purple-300 transition duration-300"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="text-white hover:text-purple-300 transition duration-300"
-          >
-            About Me
-          </a>
-          <a
-            href="#skills"
-            className="text-white hover:text-purple-300 transition duration-300"
-          >
-            My Skills
-          </a>
-          <a
-            href="#projects"
-            className="text-white hover:text-purple-300 transition duration-300"
-          >
-            My Projects
-          </a>
-          <a
-            href="#contact"
-            className="text-white hover:text-purple-300 transition duration-300"
-          >
-            Contact Me
-          </a>
-        </div>
-
-        {/* Right: Hire Me Button */}
-        <div className="hidden md:block">
-          <a
-            href="#contact"
-            className="px-6 py-2 bg-purple-600 text-white font-medium rounded-md hover:bg-purple-700 transition"
-          >
-            Hire Me
-          </a>
-        </div>
-
-        {/* Mobile Menu Icon */}
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <svg
-            className="w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Mobile Nav Links */}
-      {menuOpen && (
-        <div className="md:hidden bg-black text-white py-4 space-y-2">
-          <a
-            href="#home"
-            className="block text-center hover:text-purple-300 transition duration-300"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="block text-center hover:text-purple-300 transition duration-300"
-          >
-            About Me
-          </a>
-          <a
-            href="#skills"
-            className="block text-center hover:text-purple-300 transition duration-300"
-          >
-            My Skills
-          </a>
-          <a
-            href="#projects"
-            className="block text-center hover:text-purple-300 transition duration-300"
-          >
-            My Projects
-          </a>
-          <a
-            href="#contact"
-            className="block text-center hover:text-purple-300 transition duration-300"
-          >
-            Contact Me
-          </a>
-        </div>
-      )}
-    </nav>
+        {/* Mobile Nav Links */}
+        {menuOpen && (
+          <div className="md:hidden bg-black text-white py-4 space-y-2">
+            <a
+              href="#home"
+              className="block text-center hover:text-purple-300 transition duration-300"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="block text-center hover:text-purple-300 transition duration-300"
+            >
+              About Me
+            </a>
+            <a
+              href="#skills"
+              className="block text-center hover:text-purple-300 transition duration-300"
+            >
+              My Skills
+            </a>
+            <a
+              href="#projects"
+              className="block text-center hover:text-purple-300 transition duration-300"
+            >
+              My Projects
+            </a>
+            <a
+              href="#contact"
+              className="block text-center hover:text-purple-300 transition duration-300"
+            >
+              Contact Me
+            </a>
+          </div>
+        )}
+      </nav>
+    </div>
   );
 };
 
