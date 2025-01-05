@@ -237,29 +237,157 @@
 
 
 
+// import React from "react";
+// import portfolioImage from "../../assets/my-picture.png"
+
+// const HeroSection = () => {
+//   return (
+//     <section className=" bg-gradient-to-b from-black via-purple-900 to-black h-screen flex items-center">
+//       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12">
+//         {/* Text Content */}
+//         <div className="text-center md:text-left md:w-1/2">
+//           <h1 className="text-5xl md:text-6xl font-bold text-white leading-snug">
+//             Hello, I’m <span className="text-blue-400">[Your Name]</span>
+//           </h1>
+//           <p className="mt-4 text-gray-300 text-lg">
+//             A passionate developer skilled in Front-End and Back-End
+//             technologies. I love creating beautiful and functional digital
+//             experiences.
+//           </p>
+//           <div className="mt-6 flex justify-center md:justify-start space-x-4">
+//             <a
+//               href="#about"
+//               className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition"
+//             >
+//               About Me
+//             </a>
+//             <a
+//               href="#contact"
+//               className="px-6 py-3 border border-blue-600 text-white font-medium rounded-md hover:bg-blue-600 transition"
+//             >
+//               Contact Me
+//             </a>
+//           </div>
+//           <div className="text-white space-x-6 text-xl relative">
+//             <a
+//               href="https://facebook.com"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="hover:text-blue-400 transition"
+//             >
+//               Facebook
+//             </a>
+//             <a
+//               href="https://linkedin.com"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="hover:text-blue-400 transition"
+//             >
+//               LinkedIn
+//             </a>
+//             <a
+//               href="https://github.com"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="hover:text-blue-400 transition"
+//             >
+//               GitHub
+//             </a>
+//           </div>
+//         </div>
+
+//         {/* Image Section */}
+//         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+//           <div className="relative w-72 h-72 sm:w-96 sm:h-96">
+//             <img
+//               src={portfolioImage}
+//               alt="Profile"
+//               className="w-full h-full object-cover bg-center rounded-full border-4 border-purple-300 shadow-lg"
+//             />
+//             <div className="absolute top-0 left-0 w-full h-full rounded-full bg-purple-400 opacity-20 animate-pulse"></div>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Social Icons */}
+//       {/* <div className="absolute bottom-8 left-8 text-white space-x-6 text-xl">
+//         <a
+//           href="https://facebook.com"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-blue-400 transition"
+//         >
+//           Facebook
+//         </a>
+//         <a
+//           href="https://linkedin.com"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-blue-400 transition"
+//         >
+//           LinkedIn
+//         </a>
+//         <a
+//           href="https://github.com"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-blue-400 transition"
+//         >
+//           GitHub
+//         </a>
+//       </div> */}
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+
 import React from "react";
-import portfolioImage from "../../assets/my-picture.png"
+import { Typewriter } from "react-simple-typewriter";
+import portfolioImage from "../../assets/my-picture.png";
 
 const HeroSection = () => {
   return (
-    <section className=" bg-gradient-to-b from-black via-purple-900 to-black h-screen flex items-center">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12">
-        {/* Text Content */}
-        <div className="text-center md:text-left md:w-1/2">
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-snug">
-            Hello, I’m <span className="text-blue-400">[Your Name]</span>
+    <section className="bg-gradient-to-b from-black via-purple-900 to-black h-screen flex items-center">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 space-y-8 md:space-y-0">
+        {/* Left Section - Text Content */}
+        <div className="md:w-1/2 text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-snug">
+            Hi, I am <span className="text-blue-400">Sheikh Jabed</span>
           </h1>
-          <p className="mt-4 text-gray-300 text-lg">
-            A passionate developer skilled in Front-End and Back-End
-            technologies. I love creating beautiful and functional digital
-            experiences.
+          <h2 className="mt-4 text-2xl md:text-3xl text-blue-300 font-semibold">
+            Hi, I am{" "}
+            <span className="text-yellow-400">
+              <Typewriter
+                words={[
+                  "a Web Developer",
+                  "a Coder",
+                  "a Programmer",
+                  "a Problem Solver",
+                ]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
+          </h2>
+          <p className="mt-6 text-gray-300 text-lg leading-relaxed">
+            I am a passionate developer skilled in creating dynamic, responsive,
+            and visually appealing web applications. I strive to deliver
+            innovative solutions and exceptional user experiences.
           </p>
-          <div className="mt-6 flex justify-center md:justify-start space-x-4">
+          {/* Buttons */}
+          <div className="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-start">
             <a
-              href="#about"
+              href="/resume.pdf"
+              download
               className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition"
             >
-              About Me
+              Download Resume
             </a>
             <a
               href="#contact"
@@ -268,74 +396,54 @@ const HeroSection = () => {
               Contact Me
             </a>
           </div>
-          <div className="text-white space-x-6 text-xl relative">
+          {/* Social Links */}
+          <div className="mt-6 flex justify-center md:justify-start space-x-6 text-2xl">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition"
+              className="text-gray-300 hover:text-blue-400 transition"
             >
-              Facebook
+              <i className="fab fa-facebook"></i>
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition"
+              className="text-gray-300 hover:text-blue-400 transition"
             >
-              LinkedIn
+              <i className="fab fa-linkedin"></i>
             </a>
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition"
+              className="text-gray-300 hover:text-blue-400 transition"
             >
-              GitHub
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-400 transition"
+            >
+              <i className="fab fa-twitter"></i>
             </a>
           </div>
         </div>
 
-        {/* Image Section */}
-        <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-          <div className="relative w-72 h-72 sm:w-96 sm:h-96">
+        {/* Right Section - Image */}
+        <div className="md:w-1/2 flex justify-center">
+          <div className="w-72 sm:w-96 h-72 sm:h-96">
             <img
               src={portfolioImage}
-              alt="Profile"
-              className="w-full h-full object-cover bg-center rounded-full border-4 border-purple-300 shadow-lg"
+              alt="Sheikh Jabed"
+              className="w-full h-full object-cover rounded-full border-4 border-purple-300 shadow-lg"
             />
-            <div className="absolute top-0 left-0 w-full h-full rounded-full bg-purple-400 opacity-20 animate-pulse"></div>
           </div>
         </div>
       </div>
-
-      {/* Social Icons */}
-      {/* <div className="absolute bottom-8 left-8 text-white space-x-6 text-xl">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-400 transition"
-        >
-          Facebook
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-400 transition"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-400 transition"
-        >
-          GitHub
-        </a>
-      </div> */}
     </section>
   );
 };

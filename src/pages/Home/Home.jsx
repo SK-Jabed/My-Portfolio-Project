@@ -9,19 +9,12 @@ import ProjectsSection from './ProjectsSection';
 const Home = () => {
     return (
       <div>
-        Homepage
-        <div>
-
-        <HeroSection></HeroSection>
-        </div>
-        <div>
-
+        <HeroSection></HeroSection>      
         <AboutMe></AboutMe>
         <MyJourney></MyJourney>
         <Skills></Skills>
         <ProjectsSection></ProjectsSection>
         <ContactSection></ContactSection>
-        </div>
       </div>
     );
 };
