@@ -10,7 +10,7 @@ const projectDetails = {
     improvements: "Implementing AI-based product recommendations...",
     liveLink: "https://gadget-heaven-reactjs-project.netlify.app/",
     githubLink: "https://github.com/SK-Jabed/B10-Assignment-08",
-    image: "https://i.ibb.co.com/wKjrD4s/Screenshot-2025-01-05-022827.png", // Replace with actual project image URL
+    image: "https://i.ibb.co.com/wKjrD4s/Screenshot-2025-01-05-022827.png",
   },
   2: {
     title: "LostFinder",
@@ -21,7 +21,7 @@ const projectDetails = {
     liveLink: "https://b10-assignment-11-753d2.web.app/",
     githubLink:
       "https://github.com/programming-hero-web-course2/b10a11-client-side-SK-Jabed",
-    image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png", // Replace with actual project image URL
+    image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
   },
   3: {
     title: "Warmth & Care",
@@ -32,7 +32,7 @@ const projectDetails = {
     liveLink: "https://b10-assignment-09.web.app/",
     githubLink:
       "https://github.com/programming-hero-web-course1/b10-a9-authentication-SK-Jabed",
-    image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png", // Replace with actual project image URL
+    image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
   },
 };
 
