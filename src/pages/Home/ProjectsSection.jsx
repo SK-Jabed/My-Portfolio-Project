@@ -11,20 +11,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "WhereIsIt",
+    title: "LostFinder",
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png", // Replace with project image URL
     description: "A platform to connect people for lost and found items...",
     technologies: ["Next.js", "Daisy UI", "MongoDB"],
   },
   {
     id: 3,
-    title: "Crowdcube",
-    image: "https://i.ibb.co.com/Fx5JGKw/Screenshot-2025-01-05-023809.png", // Replace with project image URL
-    description: "A crowdfunding website to raise funds for your ideas...",
-    technologies: ["React", "Node.js", "Express.js", "Stripe"],
-  },
-  {
-    id: 4,
     title: "Winter Donation",
     image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png", // Replace with project image URL
     description: "A platform to donate winter clothes to needy people...",
@@ -54,7 +47,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}

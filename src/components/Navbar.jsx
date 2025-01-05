@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,12 +17,12 @@ const Navbar = () => {
 
           {/* Middle: Desktop Nav Links */}
           <div className="hidden md:flex space-x-6 text-lg">
-            <a
-              href="#"
+            <Link
+              to={"/"}
               className="text-white hover:text-purple-300 transition duration-300"
             >
               Home
-            </a>
+            </Link>
             <a
               href="#about"
               className="text-white hover:text-purple-300 transition duration-300"

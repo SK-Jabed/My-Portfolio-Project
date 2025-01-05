@@ -383,8 +383,7 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-start">
             <a
-              href="/resume.pdf"
-              download
+              href="https://docs.google.com/document/d/1P8RJA2-juuKkaKmz1MHkCJCv7ZxiHbrwvn8Bc2M40LE/edit?tab=t.0"
               className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition"
             >
               Download Resume

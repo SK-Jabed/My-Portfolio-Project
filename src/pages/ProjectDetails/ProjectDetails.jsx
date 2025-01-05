@@ -8,21 +8,32 @@ const projectDetails = {
       "An e-commerce platform offering a wide range of gadgets. This project was built with modern technologies like React and Firebase.",
     challenges: "Managing state across multiple components using Redux...",
     improvements: "Implementing AI-based product recommendations...",
-    liveLink: "https://gadgetheaven.com",
-    githubLink: "https://github.com/username/gadget-heaven",
+    liveLink: "https://gadget-heaven-reactjs-project.netlify.app/",
+    githubLink: "https://github.com/SK-Jabed/B10-Assignment-08",
     image: "https://i.ibb.co.com/wKjrD4s/Screenshot-2025-01-05-022827.png", // Replace with actual project image URL
   },
   2: {
-    title: "WhereIsIt",
+    title: "LostFinder",
     description:
       "A platform to connect individuals who lost and found belongings...",
     challenges: "Implementing real-time notifications...",
     improvements: "Adding multi-language support...",
-    liveLink: "https://whereisit.com",
-    githubLink: "https://github.com/username/whereisit",
+    liveLink: "https://b10-assignment-11-753d2.web.app/",
+    githubLink:
+      "https://github.com/programming-hero-web-course2/b10a11-client-side-SK-Jabed",
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png", // Replace with actual project image URL
   },
-  // Add more project details as needed...
+  3: {
+    title: "Warmth & Care",
+    description:
+      "This platform bridges the gap between donors and volunteers, enabling...",
+    challenges: "Implementing real-time notifications...",
+    improvements: "Adding multi-language support...",
+    liveLink: "https://b10-assignment-09.web.app/",
+    githubLink:
+      "https://github.com/programming-hero-web-course1/b10-a9-authentication-SK-Jabed",
+    image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png", // Replace with actual project image URL
+  },
 };
 
 const ProjectDetails = () => {
