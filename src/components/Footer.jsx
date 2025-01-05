@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-black via-purple-900 to-black text-white">
       {/* Thank You Section */}
-      <div className="text-center py-16">
+      <div className="text-center py-16 px-3">
         <Zoom>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-400">
-            Thank you for watching
+            Thank you for scrolling
           </h2>
         </Zoom>
         <Slide direction="up">
@@ -33,14 +33,14 @@ const Footer = () => {
           <Slide direction="up">
             <p className="mt-4 text-center text-gray-300">
               Designed and built with ❤️ & ☕ by{" "}
-              <span className="text-pink-400 font-semibold">[Your Name]</span>
+              <span className="text-pink-400 font-semibold">Sheikh Jabed</span>
             </p>
           </Slide>
 
           {/* Social Icons */}
           <div className="flex space-x-6 mt-6">
             <a
-              href="https://twitter.com"
+              href="https://x.com/Sheikh_Jabed_69"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-blue-400 transition"
@@ -48,7 +48,7 @@ const Footer = () => {
               <FaTwitter />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/SK-Jabed"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-gray-400 transition"
@@ -56,7 +56,7 @@ const Footer = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sheikh-jabed-b0b957318/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-blue-700 transition"
@@ -64,7 +64,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/s_k_j_69/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-pink-400 transition"
