@@ -73,6 +73,9 @@ const ContactSection = () => {
 
 
 
+
+
+
       {/* Contact Info */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 px-6 md:px-20">
         <div className="text-center p-4 border-2 border-gray-500 rounded-md bg-gray-700">
