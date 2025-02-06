@@ -11,7 +11,7 @@ const Navbar = () => {
           {/* Left: Logo */}
           <div className="text-2xl font-bold text-white">
             <a href="#" className="hover:text-gray-300 transition">
-              Sheikh<span className="text-purple-300">Jabed.</span>
+              Sheikh <span className="text-purple-300">Jabed</span>
             </a>
           </div>
 
@@ -47,9 +47,7 @@ const Navbar = () => {
             >
               Contact Me
             </a>
-          </div>
-
-          {/* Right: Hire Me Button */}
+            {/* Right: Hire Me Button */}
           <div className="hidden lg:block">
             <a
               href="#contact"
@@ -58,7 +56,8 @@ const Navbar = () => {
               Hire Me
             </a>
           </div>
-
+          </div>
+         
           {/* Mobile Menu Icon */}
           <button
             className="lg:hidden text-white focus:outline-none"

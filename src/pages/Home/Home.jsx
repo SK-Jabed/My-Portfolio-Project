@@ -9,7 +9,7 @@ import ProjectsSection from './ProjectsSection';
 const Home = () => {
     return (
       <div>
-        <HeroSection></HeroSection>      
+        {/* <HeroSection></HeroSection>       */}
         <AboutMe></AboutMe>
         <MyJourney></MyJourney>
         <Skills></Skills>

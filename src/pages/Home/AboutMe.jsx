@@ -37,7 +37,7 @@ const AboutMe = () => {
               <div className="bg-purple-700 bg-opacity-80 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
                 <h3 className="text-xl font-bold text-white">Experience</h3>
                 <p className="text-gray-300 mt-2">
-                  3+ years of experience in front-end and back-end development.
+                  1+ years of experience in front-end and back-end development.
                 </p>
               </div>
               <div className="bg-purple-700 bg-opacity-80 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
