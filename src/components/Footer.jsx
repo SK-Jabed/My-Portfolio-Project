@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Thank You Section */}
       <div className="text-center py-16 px-3">
         <Zoom>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-400">
+          <h2 className="text-3xl md:text-5xl font-exo font-bold text-violet-600">
             Thank you for scrolling
           </h2>
         </Zoom>
