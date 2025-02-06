@@ -24,16 +24,18 @@ const Footer = () => {
         <div className="container mx-auto px-6 flex flex-col items-center">
           {/* Logo */}
           <Slide direction="left">
-            <h1 className="text-4xl font-extrabold text-blue-400">
-              MyPortfolio
-            </h1>
+            <div className="text-3xl font-lora font-semibold text-white">
+            <a href="#" className="hover:text-gray-300 transition">
+              Sheikh <span className="text-purple-300">Jabed</span>
+            </a>
+          </div>
           </Slide>
 
           {/* Footer Text */}
           <Slide direction="up">
             <p className="mt-4 text-center text-gray-300">
               Designed and built with ❤️ & ☕ by{" "}
-              <span className="text-pink-400 font-semibold">Sheikh Jabed</span>
+              <span className="text-purple-500 font-semibold">Sheikh Jabed</span>
             </p>
           </Slide>
 

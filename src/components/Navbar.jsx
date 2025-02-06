@@ -57,9 +57,9 @@ const Navbar = () => {
             <div className="hidden lg:block">
               <a
                 href="#contact"
-                className="px-6 py-2 bg-purple-500 text-white font-medium rounded-md hover:bg-purple-700 transition"
+                className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-700 transition"
               >
-                Hire Me
+                Download Resume
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
 
         {/* Mobile Nav Links */}
         {menuOpen && (
-          <div className="md:hidden bg-black text-white py-4 space-y-2">
+          <div className="md:hidden bg-black text-white py-4 space-y-4">
             <a
               href="#home"
               className="block text-center hover:text-purple-300 transition duration-300"
@@ -121,6 +121,14 @@ const Navbar = () => {
             >
               Contact Me
             </a>
+            <div className="block text-center mt-4">
+              <a
+                href="#contact"
+                className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-700 transition"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
         )}
       </nav>
