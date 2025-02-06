@@ -13,7 +13,7 @@ const Footer = () => {
           </h2>
         </Zoom>
         <Slide direction="up">
-          <p className="mt-4 text-lg md:text-xl text-gray-300">
+          <p className="mt-4 font-nunito text-lg md:text-xl text-gray-300">
             Contact me anytime. I'm here to connect and create!
           </p>
         </Slide>
