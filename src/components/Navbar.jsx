@@ -4,12 +4,47 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinks = (
+    <>
+      <Link
+        to={"/"}
+        className="text-white hover:text-purple-300 transition duration-300"
+      >
+        Home
+      </Link>
+      <a
+        href="#about"
+        className="text-white hover:text-purple-300 transition duration-300"
+      >
+        About
+      </a>
+      <a
+        href="#skills"
+        className="text-white hover:text-purple-300 transition duration-300"
+      >
+        Skills
+      </a>
+      <a
+        href="#projects"
+        className="text-white hover:text-purple-300 transition duration-300"
+      >
+        Projects
+      </a>
+      <a
+        href="#contact"
+        className="text-white hover:text-purple-300 transition duration-300"
+      >
+        Contact
+      </a>
+    </>
+  );
+
   return (
     <div className="h-[60px]">
       <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-black to-purple-900 z-50 shadow-lg">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           {/* Left: Logo */}
-          <div className="text-2xl font-bold text-white">
+          <div className="text-3xl font-lora font-semibold text-white">
             <a href="#" className="hover:text-gray-300 transition">
               Sheikh <span className="text-purple-300">Jabed</span>
             </a>
@@ -17,47 +52,18 @@ const Navbar = () => {
 
           {/* Middle: Desktop Nav Links */}
           <div className="hidden md:flex space-x-6 text-lg">
-            <Link
-              to={"/"}
-              className="text-white hover:text-purple-300 transition duration-300"
-            >
-              Home
-            </Link>
-            <a
-              href="#about"
-              className="text-white hover:text-purple-300 transition duration-300"
-            >
-              About Me
-            </a>
-            <a
-              href="#skills"
-              className="text-white hover:text-purple-300 transition duration-300"
-            >
-              My Skills
-            </a>
-            <a
-              href="#projects"
-              className="text-white hover:text-purple-300 transition duration-300"
-            >
-              My Projects
-            </a>
-            <a
-              href="#contact"
-              className="text-white hover:text-purple-300 transition duration-300"
-            >
-              Contact Me
-            </a>
+            {navLinks}
             {/* Right: Hire Me Button */}
-          <div className="hidden lg:block">
-            <a
-              href="#contact"
-              className="px-6 py-2 bg-purple-500 text-white font-medium rounded-md hover:bg-purple-700 transition"
-            >
-              Hire Me
-            </a>
+            <div className="hidden lg:block">
+              <a
+                href="#contact"
+                className="px-6 py-2 bg-purple-500 text-white font-medium rounded-md hover:bg-purple-700 transition"
+              >
+                Hire Me
+              </a>
+            </div>
           </div>
-          </div>
-         
+
           {/* Mobile Menu Icon */}
           <button
             className="lg:hidden text-white focus:outline-none"
