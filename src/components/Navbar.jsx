@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <a
               href="#contact"
-              className="px-6 py-2 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-700 transition"
+              className="px-6 py-2 bg-purple-500 text-white font-medium rounded-md hover:bg-purple-700 transition"
             >
               Hire Me
             </a>
