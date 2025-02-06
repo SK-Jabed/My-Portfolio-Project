@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-black via-purple-900 to-black text-white">
       {/* Thank You Section */}
-      <div className="text-center py-16 px-3">
+      <div className="text-center py-10 px-3">
         <Zoom>
           <h2 className="text-3xl md:text-5xl font-exo font-bold text-violet-600">
             Thank you for scrolling
