@@ -4,135 +4,122 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navLinks = (
-    <>
-      <Link
-        to={"/"}
-        className="text-white hover:text-purple-300 transition duration-300"
-      >
-        Home
-      </Link>
-      <a
-        href="#about"
-        className="text-white hover:text-purple-300 transition duration-300"
-      >
-        About
-      </a>
-      <a
-        href="#skills"
-        className="text-white hover:text-purple-300 transition duration-300"
-      >
-        Skills
-      </a>
-      <a
-        href="#projects"
-        className="text-white hover:text-purple-300 transition duration-300"
-      >
-        Projects
-      </a>
-      <a
-        href="#contact"
-        className="text-white hover:text-purple-300 transition duration-300"
-      >
-        Contact
-      </a>
-    </>
-  );
-
   return (
-    <div className="h-[60px]">
-      <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-black to-purple-900 z-50 shadow-lg">
-        <div className="container mx-auto flex items-center justify-between px-6 py-4">
-          {/* Left: Logo */}
-          <div className="text-3xl font-lora font-semibold text-white">
-            <a href="#" className="hover:text-gray-300 transition">
-              Sheikh <span className="text-purple-300">Jabed</span>
-            </a>
-          </div>
-
-          {/* Middle: Desktop Nav Links */}
-          <div className="hidden md:flex space-x-6 text-lg">
-            {navLinks}
-            {/* Right: Hire Me Button */}
-            <div className="hidden lg:block">
-              <a
-                href="#contact"
-                className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-700 transition"
-              >
-                Download Resume
-              </a>
-            </div>
-          </div>
-
-          {/* Mobile Menu Icon */}
-          <button
-            className="lg:hidden text-white focus:outline-none"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d={
-                  menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
-                }
-              />
-            </svg>
-          </button>
+    <nav className="fixed top-0 left-0 w-full bg-[#10071F] z-50 shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+        {/* Logo / Name */}
+        <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent">
+          Sheikh Jabed
         </div>
 
-        {/* Mobile Nav Links */}
-        {menuOpen && (
-          <div className="md:hidden bg-black text-white py-4 space-y-4">
-            <a
-              href="#home"
-              className="block text-center hover:text-purple-300 transition duration-300"
-            >
-              Home
-            </a>
-            <a
-              href="#about"
-              className="block text-center hover:text-purple-300 transition duration-300"
-            >
-              About Me
-            </a>
-            <a
-              href="#skills"
-              className="block text-center hover:text-purple-300 transition duration-300"
-            >
-              My Skills
-            </a>
-            <a
-              href="#projects"
-              className="block text-center hover:text-purple-300 transition duration-300"
-            >
-              My Projects
-            </a>
-            <a
-              href="#contact"
-              className="block text-center hover:text-purple-300 transition duration-300"
-            >
-              Contact Me
-            </a>
-            <div className="block text-center mt-4">
-              <a
-                href="#contact"
-                className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-700 transition"
-              >
-                Download Resume
-              </a>
-            </div>
-          </div>
-        )}
-      </nav>
-    </div>
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex space-x-6 text-lg items-center">
+          <Link
+            to="/"
+            className="nav-link hover:text-[#8870D8] transition text-[#E9E8EB]"
+          >
+            Home
+          </Link>
+          <a
+            href="#about"
+            className="nav-link hover:text-[#8870D8] transition text-[#E9E8EB]"
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            className="nav-link hover:text-[#8870D8] transition text-[#E9E8EB]"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="nav-link hover:text-[#8870D8] transition text-[#E9E8EB]"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="nav-link hover:text-[#8870D8] transition text-[#E9E8EB]"
+          >
+            Contact
+          </a>
+
+          {/* Download Resume Button */}
+          <a
+            href="https://drive.google.com/uc?export=download&id=1f3fMrQHcCRabPIpd1cRXfOfPLpeDFOTG"
+            className="px-5 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-lg hover:scale-105 transition duration-300 shadow-md"
+            download
+          >
+            Download Resume
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="lg:hidden bg-[#10071F] text-center py-4 space-y-4 text-lg text-white">
+          <a
+            href="#home"
+            className="mobile-link block text-center hover:text-purple-500 transition duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="mobile-link block text-center hover:text-purple-500 transition duration-300"
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            className="mobile-link block text-center hover:text-purple-500 transition duration-300"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="mobile-link block text-center hover:text-purple-500 transition duration-300"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="mobile-link block text-center hover:text-purple-500 transition duration-300"
+          >
+            Contact
+          </a>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1f3fMrQHcCRabPIpd1cRXfOfPLpeDFOTG"
+            className="px-5 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-lg hover:scale-105 transition duration-300 shadow-md block mx-auto w-fit"
+            download
+          >
+            Download Resume
+          </a>
+        </div>
+      )}
+    </nav>
   );
 };
 

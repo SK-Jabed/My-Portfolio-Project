@@ -1,56 +1,129 @@
-import React from 'react';
+// import React from 'react';
+
+// const MyJourney = () => {
+//     return (
+//       <div>
+//         <section
+//           id="about"
+//           className="bg-gradient-to-b from-purple-900 via-black to-purple-900 py-20 text-white"
+//         >
+//           <div className="container mx-auto px-6 md:px-12">
+//             <h2 className="text-center text-4xl md:text-5xl font-bold mb-12">
+//               My <span className="text-blue-400">Journey</span>
+//             </h2>
+
+//             {/* Timeline */}
+//             <div className="border-l border-blue-400">
+//               <div className="left-0 transform -translate-x-1/2">
+//                 <div className="bg-blue-400 w-6 h-6 rounded-full"></div>
+//               </div>
+//               <div className="ml-6">
+//                 <h3 className="text-2xl font-bold">Started as a Learner</h3>
+//                 <p className="text-gray-300 text-lg">
+//                   Began my journey with HTML, CSS, and JavaScript, mastering the
+//                   basics of web development.
+//                 </p>
+//               </div>
+
+//               <div className="left-0 mt-12 transform -translate-x-1/2">
+//                 <div className="bg-blue-400 w-6 h-6 rounded-full"></div>
+//               </div>
+//               <div className="ml-6 mt-12">
+//                 <h3 className="text-2xl font-bold">Explored New Horizons</h3>
+//                 <p className="text-gray-300 text-lg">
+//                   Learned React, Tailwind CSS, and Back-End technologies to
+//                   expand my skills.
+//                 </p>
+//               </div>
+
+//               <div className="left-0 mt-12 transform -translate-x-1/2">
+//                 <div className="bg-blue-400 w-6 h-6 rounded-full"></div>
+//               </div>
+//               <div className="ml-6 mt-12">
+//                 <h3 className="text-2xl font-bold">Professional Developer</h3>
+//                 <p className="text-gray-300 text-lg">
+//                   Worked on real-world projects, collaborating with teams to
+//                   deliver impactful solutions.
+//                 </p>
+//               </div>
+//             </div>
+//           </div>
+//         </section>
+//       </div>
+//     );
+// };
+
+// export default MyJourney;
+
+
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MyJourney = () => {
-    return (
-      <div>
-        <section
-          id="about"
-          className="relative bg-gradient-to-b from-purple-900 via-black to-purple-900 py-20 text-white"
-        >
-          <div className="container mx-auto px-6 md:px-12">
-            <h2 className="text-center text-4xl md:text-5xl font-bold mb-12">
-              My <span className="text-blue-400">Journey</span>
-            </h2>
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
-            {/* Timeline */}
-            <div className="relative border-l border-blue-400">
-              <div className="absolute left-0 transform -translate-x-1/2">
-                <div className="bg-blue-400 w-6 h-6 rounded-full"></div>
-              </div>
-              <div className="ml-6">
-                <h3 className="text-2xl font-bold">Started as a Learner</h3>
-                <p className="text-gray-300 text-lg">
-                  Began my journey with HTML, CSS, and JavaScript, mastering the
-                  basics of web development.
-                </p>
-              </div>
+  return (
+    <section
+      id="journey"
+      className="bg-gradient-to-b from-[#120820] via-[#1a0b2e] to-[#120820] py-20 text-white"
+    >
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Section Title */}
+        <h2 className="text-center text-4xl md:text-5xl font-bold mb-14">
+          My <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+            Journey
+          </span>
+        </h2>
 
-              <div className="absolute left-0 mt-12 transform -translate-x-1/2">
-                <div className="bg-blue-400 w-6 h-6 rounded-full"></div>
-              </div>
-              <div className="ml-6 mt-12">
-                <h3 className="text-2xl font-bold">Explored New Horizons</h3>
-                <p className="text-gray-300 text-lg">
-                  Learned React, Tailwind CSS, and Back-End technologies to
-                  expand my skills.
-                </p>
-              </div>
+        {/* Timeline */}
+        <div className="relative border-l-4 border-blue-400 ml-6">
+          {/* Timeline Items */}
+          {[
+            {
+              title: "Started as a Learner",
+              description:
+                "Began my journey with HTML, CSS, and JavaScript, mastering the basics of web development.",
+              year: "2023",
+            },
+            {
+              title: "Explored New Horizons",
+              description:
+                "Learned React, Tailwind CSS, and Back-End technologies to expand my skills.",
+              year: "2024",
+            },
+            {
+              title: "Professional Developer",
+              description:
+                "Worked on real-world projects, collaborating with teams to deliver impactful solutions.",
+              year: "2025",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="relative mb-10 ml-8"
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            >
+              {/* Timeline Dot */}
+              <div className="absolute -left-10 top-2 bg-blue-400 w-6 h-6 rounded-full shadow-lg shadow-blue-500"></div>
 
-              <div className="absolute left-0 mt-12 transform -translate-x-1/2">
-                <div className="bg-blue-400 w-6 h-6 rounded-full"></div>
-              </div>
-              <div className="ml-6 mt-12">
-                <h3 className="text-2xl font-bold">Professional Developer</h3>
-                <p className="text-gray-300 text-lg">
-                  Worked on real-world projects, collaborating with teams to
-                  deliver impactful solutions.
-                </p>
+              {/* Timeline Card */}
+              <div className="bg-[#1a0b2e] p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 className="text-2xl font-bold text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-300 text-lg">{item.description}</p>
+                <p className="text-blue-400 font-bold text-lg mt-3">{item.year}</p>
               </div>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
       </div>
-    );
+    </section>
+  );
 };
 
 export default MyJourney;
