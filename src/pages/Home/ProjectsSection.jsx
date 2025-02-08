@@ -7,7 +7,7 @@ const projects = [
     title: "LostFinder",
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
     description: "A platform to connect people for lost and found items...",
-    technologies: ["Next.js", "Daisy UI", "MongoDB"],
+    technologies: ["React", "Tailwind CSS", "SwiperJS", "MongoDB"],
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projects = [
     title: "FundSphere",
     image: "https://i.ibb.co.com/W4p89fm4/Screenshot-2025-02-07-155724.png",
     description: "FundSphere is a modern platform designed for entrepreneurs...",
-    technologies: ["React", "Tailwind CSS", "Firebase", "Redux"],
+    technologies: ["React", "Tailwind CSS", "Firebase", "MongoDB"],
   },
 ];
 
