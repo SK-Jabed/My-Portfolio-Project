@@ -3,16 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const projectDetails = {
   1: {
-    title: "Gadget Heaven",
-    description:
-      "An e-commerce platform offering a wide range of gadgets. This project was built with modern technologies like React and Firebase.",
-    challenges: "Managing state across multiple components using Redux...",
-    improvements: "Implementing AI-based product recommendations...",
-    liveLink: "https://gadget-heaven-reactjs-project.netlify.app/",
-    githubLink: "https://github.com/SK-Jabed/B10-Assignment-08",
-    image: "https://i.ibb.co.com/wKjrD4s/Screenshot-2025-01-05-022827.png",
-  },
-  2: {
     title: "LostFinder",
     description:
       "A platform to connect individuals who lost and found belongings...",
@@ -23,7 +13,7 @@ const projectDetails = {
       "https://github.com/programming-hero-web-course2/b10a11-client-side-SK-Jabed",
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
   },
-  3: {
+  2: {
     title: "Warmth & Care",
     description:
       "This platform bridges the gap between donors and volunteers, enabling...",
@@ -33,6 +23,16 @@ const projectDetails = {
     githubLink:
       "https://github.com/programming-hero-web-course1/b10-a9-authentication-SK-Jabed",
     image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
+  },
+  3: {
+    title: "FundSphere",
+    description:
+      "FundSphere is a modern, secure, and user-friendly crowdfunding platform designed for entrepreneurs, creators, and individuals.",
+    challenges: "Managing state across multiple components using Redux...",
+    improvements: "Implementing AI-based product recommendations...",
+    liveLink: "https://b10-assignment-10-6b3b9.web.app/",
+    githubLink: "https://github.com/SK-Jabed/FundSphere-Project-Client",
+    image: "https://i.ibb.co.com/W4p89fm4/Screenshot-2025-02-07-155724.png",
   },
 };
 
