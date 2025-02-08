@@ -105,7 +105,7 @@ const MyJourney = () => {
             <div
               key={index}
               className="relative mb-10 ml-8"
-              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              data-aos="fade-up"
             >
               {/* Timeline Dot */}
               <div className="absolute -left-10 top-2 bg-blue-400 w-6 h-6 rounded-full shadow-lg shadow-blue-500"></div>

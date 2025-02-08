@@ -31,10 +31,10 @@ const ContactSection = () => {
 
     emailjs
       .send(
-        "service_yxvyo3u", // Replace with your EmailJS Service ID
-        "template_sgmr1ua", // Replace with your EmailJS Template ID
+        "service_yxvyo3u",
+        "template_sgmr1ua",
         formData,
-        "JutGtW8LXBsU_Pt6F" // Replace with your EmailJS User ID
+        "JutGtW8LXBsU_Pt6F"
       )
       .then(
         (result) => {
@@ -129,7 +129,7 @@ const ContactSection = () => {
         <form
           className="bg-[#1e1433] p-8 rounded-lg w-full md:w-2/3 shadow-lg"
           onSubmit={handleSubmit}
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input

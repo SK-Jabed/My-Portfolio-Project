@@ -11,7 +11,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Winter Donation",
+    title: "Warmth & Care",
     image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
     description: "A platform to donate winter clothes to needy people...",
     technologies: ["React", "SwiperJS", "Tailwind CSS"],
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <section id="projects" className="py-20 bg-gradient-to-b from-[#120820] via-black to-[#120820] text-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center">
