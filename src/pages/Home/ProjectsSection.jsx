@@ -1,27 +1,27 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const projects = [
+const projects = [  
   {
     id: 1,
-    title: "Gadget Heaven",
-    image: "https://i.ibb.co.com/wKjrD4s/Screenshot-2025-01-05-022827.png", // Replace with project image URL
-    description: "An e-commerce platform for the latest gadgets...",
-    technologies: ["React", "Tailwind CSS", "Firebase", "Redux"],
-  },
-  {
-    id: 2,
     title: "LostFinder",
-    image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png", // Replace with project image URL
+    image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
     description: "A platform to connect people for lost and found items...",
     technologies: ["Next.js", "Daisy UI", "MongoDB"],
   },
   {
-    id: 3,
+    id: 2,
     title: "Winter Donation",
-    image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png", // Replace with project image URL
+    image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
     description: "A platform to donate winter clothes to needy people...",
     technologies: ["React", "SwiperJS", "Tailwind CSS"],
+  },
+  {
+    id: 3,
+    title: "FundSphere",
+    image: "https://i.ibb.co.com/W4p89fm4/Screenshot-2025-02-07-155724.png",
+    description: "FundSphere is a modern platform designed for entrepreneurs...",
+    technologies: ["React", "Tailwind CSS", "Firebase", "Redux"],
   },
 ];
 
