@@ -113,8 +113,6 @@
 
 // export default ProjectDetails;
 
-
-
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
@@ -209,7 +207,9 @@ const ProjectDetails = () => {
   }, []);
 
   if (!project) {
-    return <div className="text-center text-white mt-20">Project not found.</div>;
+    return (
+      <div className="text-center text-white mt-20">Project not found.</div>
+    );
   }
 
   return (
@@ -251,11 +251,17 @@ const ProjectDetails = () => {
             ))}
           </ul>
           <div className="mt-8 flex space-x-4">
-            <a href={project.liveLink} className="btn-primary flex items-center gap-2 text-lg px-7 py-2 bg-violet-800 rounded-md hover:bg-purple-900 text-white">
+            <a
+              href={project.liveLink}
+              className="btn-primary flex items-center gap-2 text-lg px-7 py-2 bg-violet-800 rounded-md hover:bg-purple-900 text-white"
+            >
               <FaExternalLinkAlt />
               <p>Live Site</p>
             </a>
-            <a href={project.githubLink} className="btn-primary flex items-center gap-2 text-lg px-7 py-2 bg-violet-800 hover:bg-indigo-900 text-white rounded-md">
+            <a
+              href={project.githubLink}
+              className="btn-primary flex items-center gap-2 text-lg px-7 py-2 bg-violet-800 hover:bg-indigo-900 text-white rounded-md"
+            >
               <FaGithub />
               <p>GitHub</p>
             </a>
@@ -263,11 +269,13 @@ const ProjectDetails = () => {
         </div>
       </div>
       <div className="mt-12 text-center">
-        <button onClick={() => navigate(-1)} className="btn-back flex items-center gap-2 text-lg px-7 py-2 bg-violet-800 rounded-md hover:bg-purple-900 text-white">
-          <FaArrowLeft />  
+        <button
+          onClick={() => navigate(-1)}
+          className="btn-back flex items-center gap-2 text-lg px-7 py-2 bg-violet-800 rounded-md hover:bg-purple-900 text-white"
+        >
+          <FaArrowLeft />
           <p>Go Back</p>
         </button>
-       
       </div>
     </div>
   );
