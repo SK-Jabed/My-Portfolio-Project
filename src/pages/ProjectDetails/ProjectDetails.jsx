@@ -98,7 +98,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#120820] text-white mt-20 py-16 px-6 md:px-12">
+    <div className="min-h-screen bg-gradient-to-r from-[#12091c] via-slate-950 to-[#240e43] text-white mt-20 py-16 px-6 md:px-12">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Section - Image */}
         <div data-aos="fade-up" className="md:w-1/2 flex flex-col items-center">

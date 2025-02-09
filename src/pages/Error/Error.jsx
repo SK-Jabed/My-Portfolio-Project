@@ -5,7 +5,7 @@ const ErrorPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black flex flex-col items-center justify-center text-white">
+    <div className="min-h-screen bg-gradient-to-r from-[#120820] via-purple-950 to-[#200d3b] flex flex-col items-center justify-center text-white">
       {/* Error Image */}
       <div className="animate-bounce">
         <img
