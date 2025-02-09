@@ -4,7 +4,7 @@ import portfolioImage from "../../assets/my-picture.png";
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#120820] md:h-screen flex items-center justify-center pt-20 pb-8 ">
+    <section className="bg-[#120820] md:h-screen flex items-center justify-center pb-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 space-y-8 md:space-y-0">
         
         {/* Left Side - Text Content */}
