@@ -1,13 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const projects = [  
+const projects = [
   {
     id: 1,
     title: "LostFinder",
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
     description: "A platform to connect people for lost and found items...",
     technologies: ["React", "Tailwind CSS", "SwiperJS", "MongoDB"],
+    github: "https://github.com/your-repo/lostfinder",
+    live: "https://lostfinder.example.com",
   },
   {
     id: 2,
@@ -15,6 +20,8 @@ const projects = [
     image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
     description: "A platform to donate winter clothes to needy people...",
     technologies: ["React", "SwiperJS", "Tailwind CSS"],
+    github: "https://github.com/your-repo/warmth-care",
+    live: "https://warmthcare.example.com",
   },
   {
     id: 3,
@@ -22,22 +29,26 @@ const projects = [
     image: "https://i.ibb.co.com/W4p89fm4/Screenshot-2025-02-07-155724.png",
     description: "FundSphere is a modern platform designed for entrepreneurs...",
     technologies: ["React", "Tailwind CSS", "Firebase", "MongoDB"],
+    github: "https://github.com/your-repo/fundsphere",
+    live: "https://fundsphere.example.com",
   },
 ];
 
 const ProjectsSection = () => {
   const navigate = useNavigate();
-
-  const handleViewDetails = (id) => {
-    navigate(`/projects/${id}`);
-  };
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-[#120820] via-black to-[#120820] text-white">
+    <section
+      id="projects"
+      className="py-20 px-6 bg-gradient-to-b from-[#120820] via-black to-[#120820] text-white"
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center">
-          <h2 className="text-4xl font-bold text-blue-400 animate-fade-in-down">
+        <div className="text-center" data-aos="fade-up">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-fade-in-down">
             My Best Projects
           </h2>
           <p className="mt-4 text-gray-300 text-lg">
@@ -51,39 +62,53 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+              className="bg-gray-900 bg-opacity-75 backdrop-blur-lg shadow-lg rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+              data-aos="fade-up"
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-40 object-cover"
+                className="w-full h-[220px] rounded-lg shadow-lg"
               />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-blue-300">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 mt-2">{project.description}</p>
-                <div className="mt-4">
-                  <h4 className="text-sm text-gray-500 font-semibold">
-                    Technologies:
-                  </h4>
-                  <ul className="flex flex-wrap gap-2 mt-2">
-                    {project.technologies.map((tech, index) => (
-                      <li
-                        key={index}
-                        className="bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded-md"
-                      >
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <h3 className="text-2xl font-semibold mt-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                {project.title}
+              </h3>
+              <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-700 text-gray-200 text-xs px-3 py-1 rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center mt-6">
                 <button
-                  onClick={() => handleViewDetails(project.id)}
-                  className="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                  onClick={() => navigate(`/projects/${project.id}`)}
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300"
                 >
                   View Details
                 </button>
+                <div className="flex gap-3">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-700 hover:bg-gray-800 text-white p-2 rounded-lg transition-all duration-300"
+                  >
+                    <FaGithub className="text-xl" />
+                  </a>
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-all duration-300"
+                  >
+                    <FaExternalLinkAlt className="text-xl" />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
