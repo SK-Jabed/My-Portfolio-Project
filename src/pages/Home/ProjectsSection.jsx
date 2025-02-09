@@ -11,8 +11,8 @@ const projects = [
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
     description: "A platform to connect people for lost and found items...",
     technologies: ["React", "Tailwind CSS", "SwiperJS", "MongoDB"],
-    github: "https://github.com/your-repo/lostfinder",
-    live: "https://lostfinder.example.com",
+    github: "https://github.com/SK-Jabed/LostFinder-Project-Client",
+    live: "https://b10-assignment-11-753d2.web.app/",
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const projects = [
     image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
     description: "A platform to donate winter clothes to needy people...",
     technologies: ["React", "SwiperJS", "Tailwind CSS"],
-    github: "https://github.com/your-repo/warmth-care",
-    live: "https://warmthcare.example.com",
+    github: "https://github.com/SK-Jabed/Warmth-and-Care-Project",
+    live: "https://b10-assignment-09.web.app/",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const projects = [
     image: "https://i.ibb.co.com/W4p89fm4/Screenshot-2025-02-07-155724.png",
     description: "FundSphere is a modern platform designed for entrepreneurs...",
     technologies: ["React", "Tailwind CSS", "Firebase", "MongoDB"],
-    github: "https://github.com/your-repo/fundsphere",
-    live: "https://fundsphere.example.com",
+    github: "https://github.com/SK-Jabed/FundSphere-Project-Client",
+    live: "https://b10-assignment-10-6b3b9.web.app/",
   },
 ];
 
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center" data-aos="fade-up">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-fade-in-down">
+          <h2 className="text-4xl font-dmSans font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-fade-in-down">
             My Best Projects
           </h2>
           <p className="mt-4 text-gray-300 text-lg">
