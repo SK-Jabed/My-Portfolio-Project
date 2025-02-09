@@ -83,20 +83,20 @@ const ContactSection = () => {
         <div className="text-center p-6 border border-gray-500 rounded-lg bg-[#1e1433] shadow-lg hover:shadow-xl transition">
           <h4 className="text-lg font-semibold text-blue-400">Address</h4>
           <p className="mt-2 text-gray-300">
-            999 Carter Street, Sailor Springs, IL 62434
+            Narayanganj, Dhaka, Bangladesh
           </p>
         </div>
         <div className="text-center p-6 border border-gray-500 rounded-lg bg-[#1e1433] shadow-lg hover:shadow-xl transition">
           <h4 className="text-lg font-semibold text-purple-400">Phone</h4>
-          <p className="mt-2 text-gray-300">+1 618-689-9409</p>
+          <p className="mt-2 text-gray-300">+880 1863 646 515</p>
         </div>
         <div className="text-center p-6 border border-gray-500 rounded-lg bg-[#1e1433] shadow-lg hover:shadow-xl transition">
           <h4 className="text-lg font-semibold text-pink-400">Email</h4>
-          <p className="mt-2 text-gray-300">hello@example.com</p>
+          <p className="mt-2 text-gray-300">jabedbd2295@gmail.com</p>
         </div>
         <div className="text-center p-6 border border-gray-500 rounded-lg bg-[#1e1433] shadow-lg hover:shadow-xl transition">
           <h4 className="text-lg font-semibold text-green-400">Facebook Chat</h4>
-          <p className="mt-2 text-gray-300">me.freelancer3</p>
+          <p className="mt-2 text-gray-300">SK Jabed</p>
         </div>
       </div>
 
