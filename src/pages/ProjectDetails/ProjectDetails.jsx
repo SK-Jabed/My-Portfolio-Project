@@ -9,8 +9,7 @@ const projectDetails = {
     challenges: "Implementing real-time notifications...",
     improvements: "Adding multi-language support...",
     liveLink: "https://b10-assignment-11-753d2.web.app/",
-    githubLink:
-      "https://github.com/programming-hero-web-course2/b10a11-client-side-SK-Jabed",
+    githubLink: "https://github.com/SK-Jabed/LostFinder-Project-Client",
     image: "https://i.ibb.co.com/xz1D4GF/Screenshot-2025-01-05-023258.png",
   },
   2: {
@@ -20,8 +19,7 @@ const projectDetails = {
     challenges: "Implementing real-time notifications...",
     improvements: "Adding multi-language support...",
     liveLink: "https://b10-assignment-09.web.app/",
-    githubLink:
-      "https://github.com/programming-hero-web-course1/b10-a9-authentication-SK-Jabed",
+    githubLink: "https://github.com/SK-Jabed/Warmth-and-Care-Project",
     image: "https://i.ibb.co.com/SQGgf96/Screenshot-2025-01-05-022651.png",
   },
   3: {
