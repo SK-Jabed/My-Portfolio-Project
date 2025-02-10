@@ -121,7 +121,7 @@ const Footer = () => {
             data-aos="zoom-in"
           >
             <a href="#" className="hover:text-gray-300 transition">
-              Sheikh <span className="text-purple-400">Jabed</span>
+              Sheikh <span className="text-purple-500">Jabed</span>
             </a>
           </div>
 
@@ -152,7 +152,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <p className="text-gray-400 text-sm mt-6">
+          <p className="text-gray-500 text-sm mt-6">
             © {new Date().getFullYear()} Sheikh Jabed. All rights reserved.
           </p>
         </div>
