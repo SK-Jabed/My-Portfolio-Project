@@ -27,7 +27,8 @@ const projects = [
     id: 3,
     title: "FundSphere",
     image: "https://i.ibb.co.com/W4p89fm4/Screenshot-2025-02-07-155724.png",
-    description: "FundSphere is a modern platform designed for entrepreneurs...",
+    description:
+      "FundSphere is a modern platform designed for entrepreneurs...",
     technologies: ["React", "Tailwind CSS", "Firebase", "MongoDB"],
     github: "https://github.com/SK-Jabed/FundSphere-Project-Client",
     live: "https://b10-assignment-10-6b3b9.web.app/",
@@ -73,7 +74,9 @@ const ProjectsSection = () => {
               <h3 className="text-2xl font-semibold mt-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
                 {project.title}
               </h3>
-              <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
+              <p className="text-gray-400 mt-2 text-sm">
+                {project.description}
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <span
