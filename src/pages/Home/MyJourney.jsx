@@ -15,7 +15,8 @@ const MyJourney = () => {
       <div className="container mx-auto px-6 md:px-12">
         {/* Section Title */}
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-14">
-          My <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+          My{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
             Journey
           </span>
         </h2>
@@ -43,11 +44,7 @@ const MyJourney = () => {
               year: "2025",
             },
           ].map((item, index) => (
-            <div
-              key={index}
-              className="relative mb-10 ml-8"
-              data-aos="fade-up"
-            >
+            <div key={index} className="relative mb-10 ml-8" data-aos="fade-up">
               {/* Timeline Dot */}
               <div className="absolute -left-10 top-2 bg-blue-400 w-6 h-6 rounded-full shadow-lg shadow-blue-500"></div>
 
@@ -57,7 +54,9 @@ const MyJourney = () => {
                   {item.title}
                 </h3>
                 <p className="text-gray-300 text-lg">{item.description}</p>
-                <p className="text-blue-400 font-bold text-lg mt-3">{item.year}</p>
+                <p className="text-blue-400 font-bold text-lg mt-3">
+                  {item.year}
+                </p>
               </div>
             </div>
           ))}
