@@ -19,7 +19,6 @@ import {
   SiExpress,
   SiNextdotjs,
   SiVite,
-  // SiVisualstudiocode,
 } from "react-icons/si";
 
 const skillsData = [
