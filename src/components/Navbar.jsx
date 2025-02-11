@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#10071F] z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo / Name */}
-        <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent">
+        <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 bg-clip-text text-transparent">
           Sheikh Jabed
         </div>
 
