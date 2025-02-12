@@ -8,7 +8,7 @@ const AboutMe = () => {
       id="about"
       className="bg-gradient-to-b from-[#120820] via-[#1a0b2e] to-[#120820] py-12 text-white"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Section Title */}
         <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-10">
           Know <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Me Better</span>

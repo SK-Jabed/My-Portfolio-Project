@@ -65,12 +65,12 @@ const Skills = () => {
       id="skills"
       className="relative bg-gradient-to-b from-[#120820] via-black to-[#120820] py-20 text-white"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         <h2
-          className="text-center text-4xl md:text-5xl font-bold mb-12"
+          className="text-center text-4xl md:text-5xl font-bold font-alegreya mb-12 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"
           data-aos="fade-right"
         >
-          My <span className="text-blue-400">Skills</span>
+          My Skills
         </h2>
 
         <div className="space-y-16">

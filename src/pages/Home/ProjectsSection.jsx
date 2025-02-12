@@ -46,7 +46,7 @@ const ProjectsSection = () => {
       id="projects"
       className="py-20 bg-gradient-to-b from-[#120820] via-black to-[#120820] text-white"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center" data-aos="fade-up">
           <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-fade-in-down font-alegreya">

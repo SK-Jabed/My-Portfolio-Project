@@ -12,7 +12,7 @@ const MyJourney = () => {
       id="journey"
       className="bg-gradient-to-b from-[#120820] via-[#1a0b2e] to-[#120820] py-20 text-white"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Section Title */}
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-14">
           My{" "}
