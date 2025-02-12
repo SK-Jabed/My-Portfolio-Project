@@ -73,11 +73,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Side - Image */}
-        {/* <div className="md:w-1/2 flex justify-center">
-          <img src={portfolioImage} alt="Sheikh Jabed" className="w-72 sm:w-96 rounded-full border-4 border-purple-400 shadow-lg" />
-        </div> */}
-
         {/* Right Section - Image */}
         <div className="md:w-1/2 flex justify-center">
           <div className="w-72 sm:w-96 h-72 sm:h-96 md:mt-12">
