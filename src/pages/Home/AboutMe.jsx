@@ -10,11 +10,11 @@ const AboutMe = () => {
     >
       <div className="container mx-auto px-6 md:px-8 lg:px-12">
         {/* Section Title */}
-        <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-10">
-          Know <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Me Better</span>
-        </h2>
+        <h2 className="text-4xl md:text-5xl text-center font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text animate-fade-in-down font-alegreya mb-10">
+            About Me
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center font-nunito">
           {/* Left: Text Content */}
           <Fade direction="left">
             <div>
@@ -25,21 +25,13 @@ const AboutMe = () => {
               <p className="text-lg text-gray-300 leading-relaxed">
                 My goal is to craft <span className="text-green-400 font-semibold">user-friendly solutions</span> and bring ideas to life. I thrive in{" "}
                 <span className="text-yellow-400 font-semibold">team collaborations</span> and love learning new technologies.
-              </p>
-
-              {/* Call-to-Action Button */}
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-lg transform transition hover:scale-105 hover:shadow-xl"
-              >
-                Hire Me
-              </a>
+              </p>             
             </div>
           </Fade>
 
           {/* Right: Animated Card Section */}
           <Fade direction="right">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-nunito">
               {/* Cards */}
               {[
                 { title: "Experience", text: "1+ years in full-stack development." },

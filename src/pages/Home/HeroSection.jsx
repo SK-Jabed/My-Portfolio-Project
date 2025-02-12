@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 space-y-8 md:space-y-0">
         
         {/* Left Side - Text Content */}
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-center md:text-left mt-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-snug">
             Hi, I am <span className="text-purple-400">Sheikh Jabed</span>
           </h1>
@@ -80,7 +80,7 @@ const HeroSection = () => {
 
         {/* Right Section - Image */}
         <div className="md:w-1/2 flex justify-center">
-          <div className="w-72 sm:w-96 h-72 sm:h-96">
+          <div className="w-72 sm:w-96 h-72 sm:h-96 md:mt-12">
             <img
               src={portfolioImage}
               alt="Sheikh Jabed"
