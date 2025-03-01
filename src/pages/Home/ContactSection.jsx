@@ -100,7 +100,9 @@ const ContactSection = () => {
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-16 px-6 md:px-20">
           {/* Left Section */}
           <div className="flex flex-col gap-6" data-aos="fade-right">
-            <h3 className="text-3xl font-bold text-blue-400 font-robotoSlab">Contact Me</h3>
+            <h3 className="text-3xl font-bold text-blue-400 font-robotoSlab">
+              Contact Me
+            </h3>
             <p className="text-gray-300 text-lg font-nunito">
               I’m excited to work with you! Let’s bring your vision to life.
             </p>
@@ -118,7 +120,6 @@ const ContactSection = () => {
                   </a>
                 )
               )}
-              
             </div>
           </div>
 
@@ -182,16 +183,13 @@ const ContactSection = () => {
               <p>Send Message</p>
             </button>
             {/* Submission Feedback */}
-        {isSubmitted && (
-          <div className="text-start mt-8 text-green-400 font-medium font-nunito">
-            ✅ Thank you! Your message has been sent successfully.
-          </div>
-        )}
+            {isSubmitted && (
+              <div className="text-start mt-8 text-green-400 font-medium font-nunito">
+                ✅ Thank you! Your message has been sent successfully.
+              </div>
+            )}
           </form>
-          
         </div>
-
-        
       </div>
     </section>
   );
