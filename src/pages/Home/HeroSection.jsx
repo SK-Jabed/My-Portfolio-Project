@@ -6,7 +6,6 @@ const HeroSection = () => {
   return (
     <section className="bg-[#120820] md:h-screen flex items-center justify-center pb-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 space-y-8 md:space-y-0">
-        
         {/* Left Side - Text Content */}
         <div className="md:w-1/2 text-center md:text-left mt-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-snug">
@@ -15,11 +14,26 @@ const HeroSection = () => {
           <h2 className="mt-4 text-2xl md:text-3xl text-blue-300 font-semibold">
             I am{" "}
             <span className="text-yellow-400">
-              <Typewriter words={["a Web Developer", "a Coder", "a Programmer", "a Problem Solver"]} loop cursor cursorStyle="|" typeSpeed={80} deleteSpeed={50} delaySpeed={1000} />
+              <Typewriter
+                words={[
+                  "a Web Developer",
+                  "a Coder",
+                  "a Programmer",
+                  "a Problem Solver",
+                ]}
+                loop
+                cursor
+                cursorStyle="|"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </span>
           </h2>
           <p className="mt-6 text-gray-300 text-lg leading-relaxed">
-            I am a passionate developer skilled in creating dynamic, responsive, and visually appealing web applications. I strive to deliver innovative solutions and exceptional user experiences.
+            I am a passionate developer skilled in creating dynamic, responsive,
+            and visually appealing web applications. I strive to deliver
+            innovative solutions and exceptional user experiences.
           </p>
 
           {/* Buttons */}
@@ -31,7 +45,10 @@ const HeroSection = () => {
             >
               Download Resume
             </a>
-            <a href="#contact" className="px-6 py-3 border border-purple-500 text-white font-medium rounded-lg hover:bg-purple-500 transition duration-300">
+            <a
+              href="#contact"
+              className="px-6 py-3 border border-purple-500 text-white font-medium rounded-lg hover:bg-purple-500 transition duration-300"
+            >
               Contact Me
             </a>
           </div>
